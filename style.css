@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:200;
+    font-size: 20px;
+    height: 100%;
+}
+section {
+}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.menu1 {
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    flex-direction: row;
+    display: inline-block;
+    padding: 0 50px;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+.menu1 a {
+    text-decoration: none;
+    color:orange;
+    z-index: 3;
+    float: left;
+}
+video {
+    top: -80px;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+}
+.logo {
+    position: absolute;
+    z-index: 3;
+    align-items: center;
+    top: 1.2%;
+    left: 2%;
+
+}
+main {
+    width: 100wh;
+}
+.box {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.LOGO-2 {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    z-index: 10;
+}
+.about {
+    height: 100%;
+}
+.lens {
+    width: 12%;
+    position: absolute;
+    left: 46.6%;
+    margin-top: 2%;
+}
+
+.frame {
+    width: 100%;
+    padding-right: 20px;
+
+}
+.box:hover .lens {
+    animation: len 0.2s linear infinite alternate ;
+}
+
+.rec {
+    width: 10%;
+    position: absolute;
+    left: 10%;
+    margin-top: -15%;
+    animation: rec  2s linear infinite alternate ;
+}
+
+.box-content {
+    padding: 10px;
+}
+.menu-icon {
+    width: 0;
+}
+.information {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.center {
+    display: flex;
+    
+    
+}
+.box-3 {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:200;
+    font-size: 1.5rem;
+}
+.box-3 h1 {
+    font-size:  3rem;
+}
+
+
+
+
+@keyframes len {
+    from {
+        transform: scale(100%);
+        opacity: 40%;
+    }
+    to {
+        transform: scale(70%);
+        opacity: 100%;
+    }
+}
+
+@keyframes rec {
+    from {
+        opacity: 0%;
+    }
+    to {
+    
+        opacity: 100%;
+    }
+}
+
+a:hover {
+    color: white;
+}
+
+.anh1 {
+    z-index: 10;
+    width: 10%;
+    position: absolute;
+    left: 10%;
+    margin-top: -10%;
+    display: none;
+    rotate: 20%;
+    
+}
+.anh-2 {
+    z-index: 11;
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    margin-top: -10%;
+    display: none;
+}
+    
+.anh-3 {
+    z-index: 10;
+    width: 10%;
+    position: absolute;
+    left: 8%;
+    margin-top: 10%;
+    display: none;
+}
+.anh-4 {
+    z-index: 13;
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    margin-top: 10%;
+    display: none;
+}
+    
+    
+.box:hover .anh1 {
+    display: flex;
+    animation: len 0.5s linear alternate ;
+}
+.box:hover .anh-2 {
+    display: flex;
+    animation: len 0.7s linear alternate ;
+}
+
+.box:hover .anh-3 {
+    display: flex;
+    animation: len 0.9s linear alternate ;
+}
+
+.box:hover .anh-4 {
+    display: flex;
+    animation: len 1.1s linear alternate ;
+}
+
+
+.box-footer {
+    padding: 7%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+.boxsmall {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+.in {
+    margin-left: 10%;
+}
+
+.boxsmall:hover {
+    animation: len 1.1s linear alternate ;
+}
